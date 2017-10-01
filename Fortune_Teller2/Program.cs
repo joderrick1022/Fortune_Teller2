@@ -11,22 +11,63 @@ namespace Fortune_Teller2
         static void Main(string[] args)
         {
 
-            Console.WriteLine("What is your first name?");
-            string firstName = Console.ReadLine().ToLower();
-
-            Console.WriteLine("what is your Last name? + \a");
-            string lastName = Console.ReadLine().ToLower();
-
-
-
-            Console.WriteLine("What is your age? numbers only please EX(1,25,6,7,76)");
-            int userAge = int.Parse(Console.ReadLine());
-
-            int retireIn = 0;  
+            Console.WriteLine("\t\t\t******************************************************"); 
+            Console.WriteLine("\t\t\t*            Hi Im JD ICAN SEE YOUR FUTURE           *");
+            Console.WriteLine("\t\t\t*           GO AHEAD AND FIND OUT THE UNKNOWN        *");
+            Console.WriteLine("\t\t\t*                                                    *");
+            Console.WriteLine("\t\t\t******************************************************");
 
 
-           
-            string fullName = firstName + " " + lastName;
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+            // Console.WriteLine(" I can tell you you future with just \n a little information");
+
+            Console.WriteLine("\t\t" + "What is your first name?");
+            string firstName = Console.ReadLine().ToUpper(); Console.WriteLine(" ");
+
+
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+
+
+
+
+            Console.WriteLine("\t\t" + "what is your Last name? + ");
+            string lastName = Console.ReadLine().ToUpper();
+            string fullName = (firstName + " " + lastName);
+            Console.Write( fullName + " what a  Name!!!! " ); Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+
+
+
+
+            Console.WriteLine("\t\t" + " How old are you?  numbers only please EX(1,25,6,7,76)");
+            int userAge = int.Parse(Console.ReadLine()); Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+
+            int retireIn = 0;
+
+            Console.Write("\t" +   userAge +  "!!!! " + " "  + fullName + "  This is wierd you came up in one of \n my dreams ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+
 
             if (userAge % 2 != 0)
             {
@@ -39,23 +80,17 @@ namespace Fortune_Teller2
             }
 
 
-            Console.WriteLine("What month were you born? EX(01, 01, 03 ,08)");
+            Console.WriteLine("\t" + "So tell me " + firstName + "," + " what  month were you born? EX(01, 01, 03 ,08)");
             int birthMonth = int.Parse(Console.ReadLine());
             double money = 0;
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
 
 
-            //int jan = 01;
-            //int feb = 02;
-            //int mar = 03;
-            //int apr = 04;
-            //int may = 05;
-            //int jun = 06;
-            //int jul = 07;
-            //int aug = 08;
-            //int sep = 09;
-            //int oct = 10;
-            //int nov = 11;
-            //int dec = 12;
+
+
 
             if (birthMonth <= 4 && birthMonth > 0)
             {
@@ -75,8 +110,14 @@ namespace Fortune_Teller2
             }
 
             string transportation = ("");
-            Console.WriteLine("What is your favorite ROYGBIV color? If need help understanding what ROYGBIV colors are please enter (help)");
+            Console.WriteLine("\t\t" + "What is your favorite ROYGBIV color? \n If need help understanding what ROYGBIV colors are \n please enter (help)");
             string favColor = Console.ReadLine().ToLower();
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+           
             bool red = (favColor == "red");
             bool orange = (favColor == "orange");
             bool yellow = (favColor == " yellow");
@@ -85,7 +126,7 @@ namespace Fortune_Teller2
             bool indigo = (favColor == "indigo");
             bool violet = (favColor == "violet");
 
-            string help = ("red, orange, yellow, green, blue, indigo, violet");
+            string help = ("\t\t" + "red, orange, yellow, green, blue, indigo, violet");
             bool helper = (favColor == "help");
 
 
@@ -131,8 +172,16 @@ namespace Fortune_Teller2
 
 
             string location = (" ");
-            Console.WriteLine("How many siblings do you have?");
+            Console.WriteLine(" \t How many siblings do you have?");
             int siblings = int.Parse(Console.ReadLine());
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+            
 
 
             int zero = 0;
@@ -169,14 +218,33 @@ namespace Fortune_Teller2
             {
                 location = ("North Pole ");
 
-            }else if (siblings <= 0 || siblings >= 5)
+            }
+            else if (siblings <= 0 || siblings >= 5)
             {
                 location = ("North Korea");
             }
 
 
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
+            Console.WriteLine("\a");
 
-            Console.WriteLine(fullName + " will retire " + retireIn + " Years with  " + money + "  in the bank, \n a vacation home in  " + location + "   " + " \n and you will have a " + transportation + " as a means of for Transportation.");
+
+
+
+
+
+
+
+            Console.WriteLine( "\t\t" + fullName + " will retire " + retireIn + " Years with  " + money + "  in the bank, \n a vacation home in  " + location +  " \n and you will have a " + transportation + " as a means of for Transportation.");
+
 
 
 
