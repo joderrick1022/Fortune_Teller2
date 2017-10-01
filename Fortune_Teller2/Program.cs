@@ -41,6 +41,12 @@ namespace Fortune_Teller2
             Console.WriteLine("\t\t" + "what is your Last name? + ");
             string lastName = Console.ReadLine().ToUpper();
             string fullName = (firstName + " " + lastName);
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+
+
             Console.Write( fullName + " what a  Name!!!! " ); Console.WriteLine(" ");
             Console.WriteLine(" ");
             Console.WriteLine(" ");
